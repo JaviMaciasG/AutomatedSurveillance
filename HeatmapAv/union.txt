@@ -1,0 +1,5 @@
+# this is a comment details https://trac.ffmpeg.org/wiki/Concatenate
+
+file '/home/path/git/darknet-master/HeatmapAV/images__%3d.jpg'
+
+
