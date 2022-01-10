@@ -10,10 +10,22 @@ _________
 
 There are two main modules in this project:
 
-   1. In one module, we have the main python wrap of YOLO and the application has been built up around it. Given that two out of three parts work with YOLO for the moment, the main   file that leads this application can be found there too. This file counts with the functions that are used
-    mainly by the Stampede and Lost Bag Detector from this project.
+   1. In one module, we have the main python wrap of YOLO and the application has been built up around it. Given that two out of three parts work with YOLO for the moment, the main file that leads this application can be found there too. This file counts with the functions that are use mainly by the Heatmap and Lost Bag Detector from this project.
 
-   2. The second module takes care of abnormal crowd activity, and it contains the functions that calculate the optical flow density in the image and the procedures to train the     software to enable the identification of abnormal crowd activities.
+
+
+https://user-images.githubusercontent.com/97040752/148806196-e3c6308e-3dd3-430f-a7c1-d30d2d6de1e9.MP4
+
+
+![675](https://user-images.githubusercontent.com/97040752/148807654-21f424fd-6b1c-4272-91ef-2c27a2c07cb9.jpg)
+
+   2. The second module takes care of abnormal crowd activity, and it contains the functions that calculate the optical flow density in the image and the procedures to train the software to enable the identification of abnormal crowd activities that provokes stampedes.
+
+
+
+https://user-images.githubusercontent.com/97040752/148807520-2099140d-4728-4dd4-b5f2-f3c09bd95bb0.MP4
+
+
  
 There are also other important modules that need a mention too because they contain important
 functions to make this framework possible:
@@ -83,3 +95,9 @@ values that these input accept are:
       
       It is needed to adjust the path that this repository has on your local files. As it is shown in the files, you should change "mypath" for the path that you decide to locate the repository. 
       Yolo weigths have not been added to this repository either, so you need to download those files from [Yolo`s website](https://pjreddie.com/darknet/yolo/) and place them where marked on the notes ask for them/ where the paths point to them in our application.
+      
+      ## Improvements to be done 
+      
+      - As it is seen, kalman filters have been good to make a quick prediction of the possible position of the backpacks when they are not found by YOLO. Nevertheless, not always responds good when we are continiously iterating from an unknown position. As mentioned in the documents, some inputs from the person attached to the backpack has been used, but the results can still be improved.
+      
+      - Paths to be global in the code.
